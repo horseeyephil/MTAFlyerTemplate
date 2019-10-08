@@ -1,0 +1,61 @@
+<%
+  function format(_, capturedRg) {
+    const props = capturedRg.split('^')
+    return `<a class="small-bubble" 
+        href=${props[2]}
+        style="background-color: ${props[1]}; color: ${props[3]}" 
+      >${props[0]}</a>`
+  }
+
+  function parseBubbles(text) {
+    return text.replace(/{\^([^\}]+)\}/g, format)
+  }
+%>
+
+<div class="whole-flyer">
+  <div class="title-header">
+    <%= title %>
+  </div>
+  <div class="header-box">
+    <div class="header-box__dates-header">
+      <%= datesHeader %>
+    </div>
+    <span class="header-box__subheader">
+        <%= subHeader %>
+    </span>
+    <div>
+      <% if(firstBubble){ %>
+        <div class="big-bubble first-bubble" style="background-color:<%= firstBubbleColor %>">
+          <%= firstBubble %>
+        </div>
+      <% } %>
+      <div class="big-bubble second-bubble" style="background-color:<%= secondBubbleColor %>">
+        <%= secondBubble %>
+      </div>
+    </div>
+  </div>
+  <div class="content-lists">
+    <ul class="headers-list">
+      <% headerItems.forEach(function(item) { %>
+        <li class="headers-list__item">
+          <%- parseBubbles(item)%>
+        </li>
+      <% }) %>
+    </ul>
+    <ul class="info-list">
+      <% infoItems.forEach(function(item) { %>
+        <li class="info-list__item">
+          <span class="adjust-bullets">
+            <%- parseBubbles(item)%>
+          </span>
+          </li>
+        <% }) %>
+    </ul>
+</div>
+<div class="footer">
+  <%
+    footerItems.forEach(item => {
+  %>
+    <div class="footer__item"><%- parseBubbles(item)%></div>
+  <% }) %>
+</div>

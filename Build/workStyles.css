@@ -1,0 +1,166 @@
+.whole-flyer {
+  width: 600px;
+  margin: auto;
+  margin-top: 400px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.title-header {
+  color: white;
+  background-color: black;
+  height: 78px;
+  font-size: 30px;
+  padding-top: 12px;
+  padding-left: 27px;
+  font-weight: 520;
+  letter-spacing: -2;
+}
+
+.header-box {
+  height: 162px;
+  position: relative;
+  background-color: #c4c4c4;
+  padding-top: 12px;
+  padding-left: 25px;
+  font-weight: 800;
+  position: relative;
+}
+
+.header-box__dates-header {
+  font-size: 50px;
+  letter-spacing: -1px;
+  margin-bottom: 56px;
+}
+
+.header-box__subheader {
+  font-size: 26px;
+  letter-spacing: -0.5px;
+}
+
+.big-bubble {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 108px;
+  position: absolute;
+  height: 144px;
+  width: 144px;
+  line-height: 148px;
+  border-radius: 50%;
+  top: 15px;
+  color: white;
+}
+
+.first-bubble {
+  right: 164px;
+  background-color: #e64e17;
+}
+
+.second-bubble {
+  right: 13px; 
+  background-color: #034afc;
+}
+
+
+.small-bubble {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 550;
+  text-decoration: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer__item .small-bubble {
+  font-size: 14px;
+  width: 22px;
+  height: 22px;
+  margin-right: 1px;
+  vertical-align: inherit;
+  line-height: 1.5;
+}
+
+.content-lists {
+  background-color: white;
+  height: 492px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.headers-list {
+  list-style: none;
+  padding-top: 6px;
+  padding-left: 0px;
+  margin-top: 0px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 0px;
+}
+
+.headers-list__item {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-top: 4px;
+}
+
+.headers-list__item:first-child {
+  font-weight: 540;
+  border-bottom: 2px solid black;
+}
+
+.headers-divider {
+  height: 0.5px;
+  margin: auto;
+}
+
+.info-list {
+  font-size: 20px;
+  margin-top: 6px;
+  margin-left: 12px;
+  padding-left: 0px;
+  line-height: 1.4;
+}
+
+.info-list__item {
+  margin-bottom: 24px;
+  margin-top: 6px;
+}
+
+.adjust-bullets {
+  position: relative;
+  left: -10px;
+}
+
+.footer {
+  height: 72px;
+  padding-top: 2px;
+  padding-left: 25px;
+  background-color: #c4c4c4;
+  border-bottom: 12px solid;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.footer__item {
+  display: inline-block;
+  font-size: 14px;
+  width: 132px;
+  margin-right: 9px;
+}
+
+.footer__item:nth-child(2) {
+  width: 264px;
+}
+
+.footer__item:nth-child(3) {
+  font-size: 32px;
+}
+
+body {
+  background-color: #FAEBD7;
+}
