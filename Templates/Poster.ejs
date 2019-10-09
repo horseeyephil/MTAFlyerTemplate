@@ -1,10 +1,11 @@
 <%
   function format(_, capturedRg) {
     const props = capturedRg.split('^')
-    return `<a class="small-bubble" 
-        href=${props[2]}
+    const output = `<a class="small-bubble" 
+        href=${props[2] || undefined}
         style="background-color: ${props[1]}; color: ${props[3]}" 
       >${props[0]}</a>`
+    return output
   }
 
   function parseBubbles(text) {

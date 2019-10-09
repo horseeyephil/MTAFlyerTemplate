@@ -157,10 +157,6 @@
   width: 264px;
 }
 
-.footer__item:nth-child(3) {
-  font-size: 32px;
-}
-
 body {
   background-color: #FAEBD7;
 }

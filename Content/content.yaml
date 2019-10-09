@@ -1,0 +1,21 @@
+title: Make an MTA Themed Flyer
+datesHeader: Weekends
+subHeader: New York City
+firstBubble: J
+firstBubbleColor: crimson
+secondBubble: S
+secondBubbleColor: cadetblue
+headerItems:
+  - Add your own custom copy!
+  - Put your text in "Content/content.yaml"
+  - Compile with EJS
+  - '{^n^pink^^black}pm run print is the command'
+infoItems:
+  - Put it in your site
+  - Email it to your friends
+  - Add custom bubbles with {^L^red^^white}inks
+  - Relevant css is found in "Build/workStyles.css"
+footerItems:
+  - Snazzy design
+  - ''
+  - '{^H^blue^^white}ave fun'
